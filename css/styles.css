@@ -821,7 +821,8 @@ img {
     transform var(--action-duration) var(--action-timing-function);
 }
 
-.card-thumb:hover .card-overlay {
+.overlay-item-link:hover .card-overlay,
+.overlay-item-link:focus .card-overlay {
   opacity: 1;
   transform: translateY(0);
 }
@@ -844,7 +845,8 @@ img {
   opacity: 0;
 }
 
-.card-thumb:hover .action-text {
+.overlay-item-link:hover .action-text,
+.overlay-item-link:focus .action-text {
   opacity: 1;
 }
 
