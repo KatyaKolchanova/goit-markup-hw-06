@@ -541,12 +541,17 @@ img {
   margin-right: 70px;
 }
 
-.footer .social-title {
+.footer .social-title,
+.footer .subscribe-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer .social-title {
+  margin-right: 154px;
 }
 
 .footer .actions {
@@ -597,6 +602,7 @@ img {
 .footer .social-links {
   display: flex;
   justify-content: flex-start;
+  margin-right: 93px;
 }
 
 .footer .link-thumb {
@@ -623,6 +629,92 @@ img {
 }
 
 .footer .link-icon {
+  fill: currentColor;
+}
+
+.footer .label-subscribe {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: var(--sub-text-color-darkbcg);
+}
+
+.subscribe-form {
+  display: flex;
+
+  width: 570px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.subscribe-field {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.subscribe-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 0;
+  padding-left: 16px;
+  width: 358px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  background-color: var(--dark-bcg-color);
+  color: var(--sub-text-color-darkbcg);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe.button,
+.subscribe.button:hover,
+.subscribe.button:focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color-darkbcg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe.button {
+  background-color: var(--accent-color);
+
+  transition: background-color var(--action-duration)
+    var(--action-timing-function);
+}
+
+.subscribe.button:not(:last-child) {
+  margin-right: 12px;
+}
+
+.subscribe.button:hover,
+.subscribe.button:focus {
+  background-color: var(--accent-color-button-hover);
+}
+
+.footer .subscribe-icon {
+  margin-left: 12px;
+
   fill: currentColor;
 }
 
