@@ -239,7 +239,8 @@ img {
 }
 
 .request-input.comment {
-  width: 448px;
+  width: 100%;
+  min-height: 120px;
   padding-left: 16px;
   padding-right: 16px;
 
@@ -252,22 +253,41 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .registration-form {
+.request-field.checkbox {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.link-terms {
+  text-decoration-skip-ink: none;
+  color: var(--accent-color);
+}
+
+.links:hover,
+.links:focus {
+  color: var(--accent-color);
+}
+
+.request-button,
+.request-button:hover,
+.request-button:focus {
   display: flex;
-
-  width: 570px;
-  margin-right: 0;
-  margin-left: auto;
-} */
-
-.request.button,
-.request.button:hover,
-.request.button:focus {
+  margin: 0 auto;
+  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 56px;
   padding-left: 55px;
   text-align: center;
+  cursor: pointer;
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -275,19 +295,21 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
+  border: 0;
+  border-radius: 4px;
   color: var(--primary-text-color-darkbcg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.request.button {
+.request-button {
   background-color: var(--accent-color);
 
   transition: background-color var(--action-duration)
     var(--action-timing-function);
 }
 
-.request.button:hover,
-.request.button:focus {
+.request-button:hover,
+.request-button:focus {
   background-color: var(--accent-color-button-hover);
 }
 
