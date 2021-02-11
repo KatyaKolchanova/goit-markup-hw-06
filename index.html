@@ -374,6 +374,39 @@
 							<use href="./images/sprite.svg#icon-modal-close-sign"></use>
 						</svg>
 					</div>
+					<div class="modal-form">
+						<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+						<form name="request-form" autocomplete="on" novalidate class="request-form">
+							<div class="request-field">
+								<label for="user-name" class="request-label">Имя</label>
+								<input type="user-name" name="user-name" id="user-name" autofocus class="request-input" />
+									<svg class="request-icon" width="18px" height="18px">
+										<use href="./images/sprite.svg#icon-person-black-18dp"></use>
+									</svg>
+							</div>
+							<div class="request-field">
+								<label for="phone-number" class="request-label">Телефон</label>
+								<input type="tel" name="phone-number" id="phone-number" class="request-input" />
+								<svg class="request-icon" width="18px" height="18px">
+									<use href="./images/sprite.svg#icon-phone-black-18dp"></use>
+								</svg>
+							</div>
+							<div class="request-field">
+								<label for="email" class="request-label">Почта</label>
+								<input type="email" name="email" id="email" class="request-input" />
+								<svg class="request-icon" width="18px" height="18px">
+									<use href="./images/sprite.svg#icon-email-black-18dp"></use>
+								</svg>
+							</div>
+							<div class="request-field comment">
+								<label for="comment" class="request-label">Комментарий</label>
+								<textarea name="comment" id="comment" placeholder="Введите текст" class="request-input comment"></textarea>
+							</div>
+							<button type="submit" class="request button">
+								Отправить
+							</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		
