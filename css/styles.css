@@ -265,13 +265,13 @@ img {
   color: var(--primary-text-color);
 }
 
-.link-terms {
-  text-decoration-skip-ink: none;
-  color: var(--accent-color);
+.checkbox {
 }
 
-.links:hover,
-.links:focus {
+.link-terms,
+.link-terms:hover,
+.link-terms:focus {
+  text-decoration-skip-ink: none;
   color: var(--accent-color);
 }
 

@@ -369,11 +369,6 @@
 			<!--Модальное окно-->
 			<div class="backdrop  is-hidden" data-modal>
 				<div class="modal">
-					<div class="modal-action" data-modal-close>
-						<svg class="close-icon" width="11px" height="11px">
-							<use href="./images/sprite.svg#icon-modal-close-sign"></use>
-						</svg>
-					</div>
 					<div class="modal-form">
 						<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 						<form name="request-form" autocomplete="on" novalidate class="request-form">
@@ -400,10 +395,10 @@
 							</div>
 							<div class="request-field comment">
 								<label for="comment" class="request-label">Комментарий</label>
-								<textarea name="comment" id="comment" placeholder="Введите текст" class="request-input comment"></textarea>
+								<textarea name="comment" id="comment" placeholder="Введите текст" class="request-input comment" autocomplete="off"></textarea>
 							</div>
 							<div class="request-field checkbox">
-								<input type="checkbox" name="checkbox" class="checkbox" autocomplete="off"/>
+								<input type="checkbox" name="checkbox" class="checkbox" />
 								<label class= >Соглашаюсь с рассылкой и принимаю <a href="" class="link-terms">Условия договора</a></label>
 							</div>
 							<button type="submit" class="request-button">
@@ -411,6 +406,11 @@
 							</button>
 						</form>
 					</div>
+					<button class="modal-action" data-modal-close>
+						<svg class="close-icon" width="11px" height="11px">
+							<use href="./images/sprite.svg#icon-modal-close-sign"></use>
+						</svg>
+					</button>
 				</div>
 			</div>
 		
