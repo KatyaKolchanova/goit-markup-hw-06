@@ -397,9 +397,12 @@
 								<label for="comment" class="request-label">Комментарий</label>
 								<textarea name="comment" id="comment" placeholder="Введите текст" class="request-input comment" autocomplete="off"></textarea>
 							</div>
-							<div class="request-field checkbox">
-								<input type="checkbox" name="checkbox" class="checkbox" />
-								<label class= >Соглашаюсь с рассылкой и принимаю <a href="" class="link-terms">Условия договора</a></label>
+							<div class="request-field checkmark">
+								<input type="checkbox" name="checkbox" id="checkbox" class="visually-hidden checkbox" />
+								<label for="checkbox" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="" class="link-terms">Условия договора</a></label>
+								<svg class="checkbox-icon" width="16px" height="15px">
+									<use href="./images/sprite.svg#icon-icon-check"></use>
+								</svg>
 							</div>
 							<button type="submit" class="request-button">
 								Отправить
